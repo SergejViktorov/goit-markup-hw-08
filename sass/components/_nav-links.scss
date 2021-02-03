@@ -1,0 +1,44 @@
+.nav-links {
+  display: flex;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__link {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $primery-text-color;
+    transition-property: color;
+    transition-duration: $animation-duration;
+    transition-timing-function: $animation-type;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+  &__link--current {
+    color: $accent-color;
+  }
+  &__link::after {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+    opacity: 0;
+    display: block;
+    transition-property: opacity;
+    transition-duration: $animation-duration;
+    transition-timing-function: $animation-type;
+  }
+  &__link--current::after,
+  &__link:focus::after,
+  &__link:hover::after {
+    opacity: 1;
+    outline: none;
+  }
+}

@@ -1,0 +1,28 @@
+.backdrop-button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin-right: 8px;
+  margin-top: 8px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $secondary-accent-color;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+  &__icon {
+    text-align: center;
+    align-items: center;
+    display: block;
+    font-family: none;
+    transition-property: color;
+    transition-duration: $animation-duration;
+    transition-timing-function: $animation-type;
+  }
+  &__icon:hover,
+  &__icon:focus {
+    color: $accent-color;
+  }
+}

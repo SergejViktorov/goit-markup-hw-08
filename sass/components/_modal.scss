@@ -1,0 +1,67 @@
+.modal {
+  padding: 40px;
+  position: absolute;
+  margin-right: 41px;
+  margin-left: 41px;
+  width: 528px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $secondary-accent-color;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.92;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primery-text-color;
+    margin-bottom: 30px;
+  }
+
+  &__button {
+    display: block;
+    cursor: pointer;
+    background-color: $accent-color;
+    color: $secondary-accent-color;
+    width: 200px;
+    height: 50px;
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+  }
+  &__button-close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-right: 8px;
+    margin-top: 8px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $secondary-accent-color;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  &__button-close--close {
+    text-align: center;
+    align-items: center;
+    display: block;
+    font-family: none;
+    transition-property: color;
+    transition-duration: $animation-duration;
+    transition-timing-function: $animation-type;
+  }
+  &__close:hover,
+  &__close:focus {
+    color: $accent-color;
+  }
+}

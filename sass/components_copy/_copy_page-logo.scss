@@ -1,0 +1,22 @@
+.page-logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  color: $logo-head-color;
+  font-family: $sec-font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  &--start {
+    color: $accent-color;
+  }
+  &__footer {
+    color: $secondary-accent-color;
+    font-family: $sec-font-family;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    display: block;
+  }
+}

@@ -1,0 +1,24 @@
+.address-list {
+  display: flex;
+  flex-direction: column;
+  width: 231px;
+  color: $secondary-accent-color;
+  line-height: 1.7;
+  font-style: normal;
+  width: 231px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__link {
+    color: $footer-contacts;
+    transition-property: color;
+    transition-duration: $animation-duration;
+    transition-timing-function: $animation-type;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+    outline: none;
+  }
+}

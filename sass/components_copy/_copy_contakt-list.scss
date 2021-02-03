@@ -1,0 +1,28 @@
+.contakt-list {
+  display: flex;
+  margin-left: auto;
+
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+    outline: none;
+  }
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
+  &__link {
+    display: flex;
+    color: $secondary-text-color;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: $animation-duration;
+    transition-timing-function: $animation-type;
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}

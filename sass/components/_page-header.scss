@@ -1,0 +1,13 @@
+.page-header {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &--portfolio {
+    border: 1px solid #ececec;
+  }
+  &__contaner {
+    display: flex;
+    align-items: center;
+  }
+}
