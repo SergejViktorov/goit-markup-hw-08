@@ -1,6 +1,15 @@
-.contaner {
-  width: 1200px;
+.container {
+  width: 450px;
   margin-right: auto;
   margin-left: auto;
   padding: 0px 15px;
+
+  @media (min-width: 768px) {
+    width: 738px;
+    background-color: red;
+  }
+  @media (min-width: 1200px) {
+    width: 1170px;
+    background-color: green;
+  }
 }
