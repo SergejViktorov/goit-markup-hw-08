@@ -317,10 +317,6 @@ img {
   letter-spacing: 0.02em;
 }
 
-.page-header--portfolio {
-  border: 1px solid #ececec;
-}
-
 .page-header__contaner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,10 +326,17 @@ img {
           align-items: center;
 }
 
+.page-header__button {
+  background-color: #ffffff;
+  margin-left: auto;
+  border: none;
+  cursor: pointer;
+}
+
 .page-logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-left: 0;
   color: #000000;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -355,9 +358,7 @@ img {
 }
 
 .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .nav-links__item:not(:last-child) {
@@ -410,9 +411,7 @@ img {
 }
 
 .contakt-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 
@@ -1322,10 +1321,22 @@ img {
 }
 
 .contaner {
-  width: 1200px;
+  width: 450px;
   margin-right: auto;
   margin-left: auto;
   padding: 0px 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .contaner {
+    width: 738px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contaner {
+    width: 1170px;
+  }
 }
 
 .portfolio {

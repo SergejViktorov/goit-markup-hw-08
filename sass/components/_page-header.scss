@@ -3,11 +3,14 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  &--portfolio {
-    border: 1px solid #ececec;
-  }
   &__contaner {
     display: flex;
     align-items: center;
+  }
+  &__button {
+    background-color: $secondary-accent-color;
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
   }
 }
