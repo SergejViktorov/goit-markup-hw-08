@@ -1,28 +1,53 @@
 .advantages {
-  padding: 94px 0px;
+  padding: 60px 0px;
+  @media screen and (min-width: $desktop-width) {
+    padding: 94px 0px;
+  }
 
   &__list {
-    display: flex;
+    @media screen and (min-width: $desktop-width) {
+      display: flex;
+    }
   }
   &__item {
-    width: 270px;
+    @media screen and (min-width: $desktop-width) {
+      width: 270px;
+    }
   }
   &__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop-width) {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
   }
-  &__icon {
+  &__icon-box {
+    @media screen and (min-width: $desktop-width) {
+      width: 270px;
+      height: 120px;
+      display: flex;
+    }
     content: "";
-    width: 270px;
-    height: 120px;
-    display: flex;
+    display: block;
     border-radius: 4px;
     background-color: $lite-background-color;
     margin-bottom: 30px;
     background-image: url(../images/symbol-defs.svg#);
     align-items: center;
     justify-content: center;
+    padding: 25px 0;
+  }
+  &__icon {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
   &__title-cart {
+    @media screen and (min-width: $desktop-width) {
+      text-align: left;
+    }
+    text-align: center;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;

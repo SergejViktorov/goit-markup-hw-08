@@ -1,6 +1,17 @@
 .contakt-list {
   display: none;
-  margin-left: auto;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 84px;
+    padding: 21px 0;
+  }
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+  }
 
   &__link:hover,
   &__link:focus {
@@ -9,20 +20,35 @@
   }
 
   &__item + &__item {
-    margin-left: 50px;
+    @media screen and (min-width: $desktop-width) {
+      margin-left: 50px;
+    }
+  }
+  &__item {
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      padding: 32px 0px;
+      margin-bottom: 0px;
+    }
   }
   &__link {
-    display: flex;
     color: $secondary-text-color;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    display: flex;
     transition-property: color;
     transition-duration: $animation-duration;
     transition-timing-function: $animation-type;
   }
   &__icon {
-    margin-right: 10px;
-    fill: currentColor;
+    @media screen and (min-width: $tablet-width) {
+      margin-right: 8px;
+      fill: currentColor;
+    }
+    @media screen and (min-width: $desktop-width) {
+      margin-right: 10px;
+      fill: currentColor;
+    }
   }
 }

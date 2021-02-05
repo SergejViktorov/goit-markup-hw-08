@@ -1,8 +1,14 @@
 .nav-links {
   display: none;
 
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+  }
+
   &__item:not(:last-child) {
-    margin-right: 50px;
+    @media screen and (min-width: $tablet-width) {
+      margin-right: 50px;
+    }
   }
   &__link {
     position: relative;
