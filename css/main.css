@@ -689,7 +689,7 @@ img {
   display: block;
   font-weight: 700;
   font-size: 28px;
-  line-height: 1.18;
+  line-height: 1.17;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -778,12 +778,6 @@ img {
   background-color: #ffffff;
 }
 
-@media screen and (min-width: 1200px) {
-  .command__item {
-    width: 270px;
-  }
-}
-
 .command__meteo {
   display: block;
   border: 1px solid transparent;
@@ -799,8 +793,6 @@ img {
 
 .command__position {
   color: #757575;
-  line-height: 1.19;
-  font-size: 16px;
 }
 
 .master-social {
@@ -962,13 +954,15 @@ img {
   padding: 60px 0px;
 }
 
-.footer__contaner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer__contaner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .footer__title {

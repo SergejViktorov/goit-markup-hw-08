@@ -5,8 +5,10 @@
   padding: 60px 0px;
 
   &__contaner {
-    display: flex;
-    align-items: baseline;
+    @media screen and (min-width: $desktop-width) {
+      display: flex;
+      align-items: baseline;
+    }
   }
 
   &__title {
