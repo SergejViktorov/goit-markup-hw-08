@@ -20,10 +20,13 @@
     color: $accent-color;
   }
   &__footer {
+    @media screen and (min-width: $desktop-width) {
+      font-size: 26px;
+      line-height: 1.2;
+    }
     color: $secondary-accent-color;
     font-family: $sec-font-family;
-    font-size: 26px;
-    line-height: 1.2;
+
     margin-bottom: 20px;
     display: block;
   }

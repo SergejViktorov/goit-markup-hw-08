@@ -1,32 +1,26 @@
 .client {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  @media screen and (min-width: $desktop-width) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   &__list {
-    display: flex;
-    flex-wrap: wrap;
+    @media screen and (min-width: $desktop-width) {
+      display: flex;
+    }
     margin: 0;
     padding: 0;
   }
   &__item {
-    width: 210px;
+    width: 170px;
     height: 90px;
-    @media screen and (min-width: $desktop-width) {
-      width: 170px;
-      height: 90px;
-    }
-  }
-  &__item:not(:last-child) {
-    @media screen and (min-width: $desktop-width) {
-      margin-right: 30px;
-    }
   }
 
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
   &__link {
-    display: flex;
+    @media screen and (min-width: $desktop-width) {
+      display: flex;
+    }
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -46,11 +40,5 @@
   }
   &__icon {
     fill: currentcolor;
-  }
-  &__item:not(:nth-child(2n)) {
-    margin-right: 30px;
-  }
-  &__item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 30px;
   }
 }
