@@ -1,17 +1,12 @@
 .command {
-  padding: 94px 0px;
   background: $lite-background-color;
+  padding: 60px 0px;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.17;
   text-align: center;
-
-  &__list {
-    @media screen and (min-width: $desktop-width) {
-      display: flex;
-    }
-  }
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: $desktop-width) {
+    padding: 94px 0px;
+    line-height: 1.19;
   }
   &__item {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -23,19 +18,10 @@
 
     background-color: $secondary-accent-color;
   }
-  &__meteo {
-    display: block;
-    border: 1px solid transparent;
-    border-radius: 0px 0px 4px 4px;
-    padding-top: 30px;
-    margin-bottom: 16px;
-  }
-
-  &__name {
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-  &__position {
-    color: $secondary-text-color;
+  &__item:not(:last-child) {
+    @media screen and (min-width: $desktop-width) {
+      margin-right: 30px;
+    }
+    margin-bottom: 30px;
   }
 }

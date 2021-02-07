@@ -741,23 +741,18 @@ img {
 }
 
 .command {
-  padding: 94px 0px;
   background: #f5f4fa;
+  padding: 60px 0px;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.17;
   text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
-  .command__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .command {
+    padding: 94px 0px;
+    line-height: 1.19;
   }
-}
-
-.command__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .command__item {
@@ -770,21 +765,14 @@ img {
   background-color: #ffffff;
 }
 
-.command__meteo {
-  display: block;
-  border: 1px solid transparent;
-  border-radius: 0px 0px 4px 4px;
-  padding-top: 30px;
-  margin-bottom: 16px;
+.command__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
-.command__name {
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.command__position {
-  color: #757575;
+@media screen and (min-width: 1200px) {
+  .command__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .master-social {
@@ -914,6 +902,7 @@ img {
     -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
         flex-basis: calc((100% - 6 * 15px) / 3);
     width: 226px;
+    height: 90px;
   }
 }
 
@@ -921,6 +910,7 @@ img {
   .client__item {
     width: 170px;
     height: 90px;
+    margin: 0;
   }
 }
 
