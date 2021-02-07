@@ -760,9 +760,14 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   display: block;
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
   padding-bottom: 30px;
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .command__item {
+    width: 270px;
+  }
 }
 
 .command__item:not(:last-child) {
@@ -1579,7 +1584,6 @@ img {
 }
 
 .contaner {
-  width: 480px;
   margin-right: auto;
   margin-left: auto;
   padding: 0px 15px;
