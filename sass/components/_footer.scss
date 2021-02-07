@@ -5,6 +5,11 @@
   padding: 60px 0px;
 
   &__contaner {
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     @media screen and (min-width: $desktop-width) {
       display: flex;
     }

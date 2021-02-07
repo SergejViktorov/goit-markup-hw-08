@@ -36,6 +36,9 @@
     outline: none;
   }
   &__footer {
+    @media screen and (min-width: $tablet-width) {
+      margin-left: 165px;
+    }
     @media screen and (min-width: $desktop-width) {
       margin-left: 70px;
     }

@@ -852,6 +852,12 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .master-social__footer {
+    margin-left: 165px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .master-social__footer {
     margin-left: 70px;
@@ -934,6 +940,19 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contaner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
