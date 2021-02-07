@@ -1,25 +1,28 @@
 .footer {
+  display: block;
   background-color: $dark-background-color;
   text-decoration: none;
   padding: 60px 0px;
 
   &__contaner {
-    text-align: center;
     @media screen and (min-width: $desktop-width) {
       display: flex;
-      align-items: baseline;
-      text-align: left;
     }
+
+    align-items: baseline;
   }
 
   &__title {
-    @media screen and (min-width: $desktop-width) {
-      text-align: left;
-    }
+    font-family: $main-font-family;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: $secondary-accent-color;
     margin-bottom: 20px;
-    text-align: center;
-    line-height: 1.14;
+    margin-top: 0;
+    display: block;
   }
   &__social {
     fill: $secondary-accent-color;
