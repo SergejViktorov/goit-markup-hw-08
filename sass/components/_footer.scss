@@ -13,16 +13,13 @@
   }
 
   &__title {
-    font-family: $main-font-family;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    @media screen and (min-width: $desktop-width) {
+      text-align: left;
+    }
     color: $secondary-accent-color;
     margin-bottom: 20px;
-    margin-top: 0;
-    display: block;
+    text-align: center;
+    line-height: 1.14;
   }
   &__social {
     fill: $secondary-accent-color;

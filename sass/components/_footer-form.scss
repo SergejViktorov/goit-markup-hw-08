@@ -1,5 +1,8 @@
 .footer-form {
-  margin-left: auto;
+  @media screen and (min-width: $desktop-width) {
+    margin-left: auto;
+  }
+  text-align: center;
 
   &__input {
     width: 358px;
@@ -10,5 +13,4 @@
     border-radius: 4px;
     padding: 15px 16px;
   }
-  
 }
