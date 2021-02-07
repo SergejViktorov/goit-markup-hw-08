@@ -1,14 +1,17 @@
 .address-list {
-  display: flex;
-  flex-direction: column;
-  width: 231px;
   color: $secondary-accent-color;
+  margin-bottom: 60px;
   line-height: 1.7;
-  font-style: normal;
-  width: 231px;
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 0px;
+  }
 
   &__item:not(:last-child) {
-    margin-bottom: 9px;
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 9px;
+    }
+    margin-bottom: 8px;
   }
   &__link {
     color: $footer-contacts;

@@ -374,6 +374,8 @@ img {
 .page-logo__footer {
   color: #ffffff;
   font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  line-height: 1.17;
   margin-bottom: 20px;
   display: block;
 }
@@ -961,22 +963,25 @@ img {
 }
 
 .address-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 231px;
   color: #ffffff;
+  margin-bottom: 60px;
   line-height: 1.7;
-  font-style: normal;
-  width: 231px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address-list {
+    margin-bottom: 0px;
+  }
 }
 
 .address-list__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address-list__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .address-list__link {
@@ -1482,7 +1487,7 @@ img {
 }
 
 .contaner {
-  width: 450px;
+  width: 480px;
   margin-right: auto;
   margin-left: auto;
   padding: 0px 15px;
