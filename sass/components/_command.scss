@@ -11,12 +11,19 @@
   &__list {
     @media screen and (min-width: $tablet-width) {
       display: flex;
+      flex-wrap: wrap;
     }
     @media screen and (min-width: $desktop-width) {
       display: flex;
+      flex-wrap: nowrap;
     }
   }
   &__item {
+    @media screen and (min-width: $tablet-width) {
+      margin-right: 15px;
+      margin-left: 15px;
+      flex-basis: calc((100% - 4 * 15px) / 2);
+    }
     @media screen and (min-width: $desktop-width) {
       padding-bottom: 30px;
       width: 270px;

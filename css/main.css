@@ -767,6 +767,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -775,6 +777,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -787,6 +791,15 @@ img {
   background-color: #ffffff;
   margin-bottom: 30px;
   margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .command__item {
+    margin-right: 15px;
+    margin-left: 15px;
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+  }
 }
 
 @media screen and (min-width: 1200px) {
