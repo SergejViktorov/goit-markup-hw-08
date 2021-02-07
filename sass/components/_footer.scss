@@ -11,7 +11,12 @@
 
     align-items: baseline;
   }
-
+  &__address {
+    text-align: center;
+    @media screen and (min-width: $desktop-width) {
+      text-align: left;
+    }
+  }
   &__title {
     font-family: $main-font-family;
     font-weight: 700;
@@ -23,6 +28,10 @@
     margin-bottom: 20px;
     margin-top: 0;
     display: block;
+    text-align: center;
+    @media screen and (min-width: $desktop-width) {
+      text-align: left;
+    }
   }
   &__social {
     fill: $secondary-accent-color;

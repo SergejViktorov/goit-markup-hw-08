@@ -36,10 +36,9 @@
     outline: none;
   }
   &__footer {
-    display: block;
-    width: 206px;
-    height: 80px;
-    align-items: baseline;
-    margin-left: 70px;
+    @media screen and (min-width: $desktop-width) {
+      margin-left: 70px;
+    }
+    margin-bottom: 20px;
   }
 }
