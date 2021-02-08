@@ -6,6 +6,20 @@
   &__item:not(:last-child) {
     margin-bottom: 30px;
   }
+  &__item:not(:nth-child(2n)) {
+    @media screen and (min-width: $tablet-width) {
+      margin-right: 30px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      margin-right: 0px;
+    }
+  }
+  &__item:nth-last-child(-n + 3) {
+    @media screen and (min-width: $desktop-width) {
+      margin-bottom: 0px;
+    }
+  }
+
   &__item:not(:nth-child(3n)) {
     @media screen and (min-width: $desktop-width) {
       margin-right: 30px;
