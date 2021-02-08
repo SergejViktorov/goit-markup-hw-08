@@ -827,6 +827,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .command__item {
+    width: 354px;
+  }
+}
+
 .command__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -1746,7 +1752,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .contaner {
-    width: 738px;
+    width: 768px;
   }
 }
 
