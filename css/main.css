@@ -328,12 +328,20 @@ img {
   margin-right: 0;
 }
 
+.page-header--portfolio {
+  border: 1px solid #ececec;
+}
+
 .page-header__button {
   background-color: #ffffff;
   margin-left: auto;
   border: none;
   cursor: pointer;
   padding: 8px 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
@@ -577,6 +585,15 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .hero__title {
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .hero__button {
   padding: 10px 32px;
   border-radius: 4px;
@@ -590,6 +607,9 @@ img {
   min-width: 145px;
   outline: none;
   border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .advantages {
@@ -699,12 +719,13 @@ img {
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .activity__sub-title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -769,6 +790,8 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-right: -30px;
+    margin-left: -30px;
   }
 }
 
@@ -806,6 +829,7 @@ img {
   .command__item {
     padding-bottom: 30px;
     width: 270px;
+    margin: 0;
   }
 }
 
@@ -1192,17 +1216,46 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 56px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons-menu {
+    margin-bottom: 56px;
+  }
 }
 
 .buttons-menu__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.buttons-menu__item {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-menu {
+    margin-bottom: 0px;
+  }
 }
 
 .buttons-menu__button {
@@ -1653,8 +1706,15 @@ img {
 }
 
 .portfolio {
-  display: block;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */

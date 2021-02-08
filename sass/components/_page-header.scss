@@ -9,12 +9,19 @@
     margin-left: 0;
     margin-right: 0;
   }
+  &--portfolio {
+    border: 1px solid #ececec;
+  }
   &__button {
     background-color: $secondary-accent-color;
     margin-left: auto;
     border: none;
     cursor: pointer;
     padding: 8px 12px;
+
+    align-items: center;
+    display: block;
+
     @media screen and (min-width: $tablet-width) {
       display: none;
     }

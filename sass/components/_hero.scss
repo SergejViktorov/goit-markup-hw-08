@@ -31,6 +31,12 @@
       margin-left: auto;
       display: block;
     }
+    @media screen and (min-width: $tablet-width) {
+      display: block;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
     margin-bottom: 30px;
     width: 360px;
     font-weight: 900;
@@ -54,5 +60,6 @@
     min-width: 145px;
     outline: none;
     border: none;
+    align-items: center;
   }
 }
