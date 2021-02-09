@@ -16,10 +16,10 @@
     position: absolute;
     z-index: 3;
     background-color: $secondary-accent-color;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 15px 48px 40px;
+    padding: 48px 0px 48px 40px;
     @media screen and (min-width: $tablet-width) {
       padding: 0;
       position: static;
@@ -37,17 +37,17 @@
 }
 
 .mobile-button {
+  z-index: 5;
   background-color: transparent;
   margin-left: auto;
   border: none;
   cursor: pointer;
+  outline: none;
 
   color: $primery-text-color;
 
   display: inline-flex;
   padding: 0;
-
-  border: none;
 
   @media screen and (min-width: $tablet-width) {
     display: none;
