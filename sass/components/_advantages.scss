@@ -5,20 +5,43 @@
   }
 
   &__list {
+    @media screen and (min-width: $tablet-width) {
+      flex-wrap: wrap;
+      display: flex;
+    }
     @media screen and (min-width: $desktop-width) {
       display: flex;
     }
   }
   &__item {
+    @media screen and (min-width: $tablet-width) {
+      width: 354px;
+    }
     @media screen and (min-width: $desktop-width) {
       width: 270px;
     }
   }
+  &__item:nth-child(2n + 1) {
+    @media screen and (min-width: $tablet-width) {
+      margin-right: 30px;
+    }
+  }
+
   &__item:not(:last-child) {
     margin-bottom: 30px;
-
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 0px;
+    }
     @media screen and (min-width: $desktop-width) {
       margin-right: 30px;
+      margin-bottom: 0px;
+    }
+  }
+  &__item:not(:nth-last-child(-n + 2)) {
+    @media screen and (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $desktop-width) {
       margin-bottom: 0px;
     }
   }
