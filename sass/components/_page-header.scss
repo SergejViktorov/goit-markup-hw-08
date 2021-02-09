@@ -71,10 +71,16 @@
   &__button {
     margin-left: auto;
   }
+  &__nav {
+    margin-bottom: 302px;
+  }
   &__nav-link {
     color: $primery-text-color;
     font-size: 40px;
     line-height: 1.18;
+  }
+  &__nav-item:not(:last-child) {
+    margin-bottom: 32px;
   }
   &__social {
     display: flex;
