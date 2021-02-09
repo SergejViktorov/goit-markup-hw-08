@@ -10,6 +10,9 @@
     margin-right: 0;
   }
   &__menu {
+    transform: translateY(100%);
+    transition-duration: $animation-duration;
+    transition-timing-function: $animation-type;
     position: absolute;
     top: 0;
     right: 0;
@@ -28,18 +31,18 @@
   &__button-icon {
   }
 
-  &__button {
+  .mobile-button {
     background-color: transparent;
     margin-left: auto;
     border: none;
     cursor: pointer;
 
     color: $primery-text-color;
-    width: 40px;
-    height: 40px;
 
-    align-items: center;
-    display: block;
+    display: inline-flex;
+    padding: 0;
+
+    border: none;
 
     @media screen and (min-width: $tablet-width) {
       display: none;
@@ -47,5 +50,69 @@
   }
   &__button-icon {
     fill: currentColor;
+    align-items: center;
+  }
+  &__button-cross {
+    display: none;
+  }
+
+  &__menu-social {
+  }
+}
+.mobile-button {
+  background-color: transparent;
+  margin-left: auto;
+  border: none;
+  cursor: pointer;
+
+  color: $primery-text-color;
+
+  display: inline-flex;
+  padding: 0;
+
+  border: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.mobile-button .icon-cross {
+  display: none;
+}
+
+.mobile-button.is-open .icon-cross {
+  display: block;
+}
+.mobile-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  background-attachment: $secondary-accent-color;
+  width: 480px;
+
+  &__button {
+    margin-left: auto;
+  }
+  &__nav-link {
+    color: $primery-text-color;
+    font-size: 40px;
+    line-height: 1.18;
+  }
+  &__social {
+    display: flex;
+  }
+  &__social-item {
+  }
+  &__social-item:not(:last-child) {
+    margin-right: 20px;
+  }
+  &__social-link {
+    color: $accent-color;
+    letter-spacing: 0.02em;
+    font-size: 18px;
+    line-height: 1.22;
   }
 }
