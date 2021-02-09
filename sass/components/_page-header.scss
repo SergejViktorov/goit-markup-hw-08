@@ -2,6 +2,7 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  position: relative;
 
   &__contaner {
     display: flex;
@@ -10,19 +11,21 @@
     margin-right: 0;
   }
   &__menu {
-    transform: translateY(100%);
-    transition-duration: $animation-duration;
-    transition-timing-function: $animation-type;
+    display: none;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    z-index: 3;
+    background-color: $secondary-accent-color;
+    top: 100%;
     left: 0;
+    width: 100%;
     padding: 10px 15px 48px 40px;
     @media screen and (min-width: $tablet-width) {
       padding: 0;
       position: static;
       background-color: transparent;
+    }
+    &__menu.is-open {
+      display: block;
     }
   }
   &--portfolio {
@@ -30,35 +33,8 @@
   }
   &__button-icon {
   }
-
-  .mobile-button {
-    background-color: transparent;
-    margin-left: auto;
-    border: none;
-    cursor: pointer;
-
-    color: $primery-text-color;
-
-    display: inline-flex;
-    padding: 0;
-
-    border: none;
-
-    @media screen and (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-  &__button-icon {
-    fill: currentColor;
-    align-items: center;
-  }
-  &__button-cross {
-    display: none;
-  }
-
-  &__menu-social {
-  }
 }
+
 .mobile-button {
   background-color: transparent;
   margin-left: auto;
@@ -91,7 +67,6 @@
 .menu {
   position: absolute;
   background-attachment: $secondary-accent-color;
-  width: 480px;
 
   &__button {
     margin-left: auto;
@@ -115,4 +90,7 @@
     font-size: 18px;
     line-height: 1.22;
   }
+}
+.menu.is-open {
+  display: block;
 }
