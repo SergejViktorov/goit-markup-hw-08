@@ -82,6 +82,22 @@
   &__nav-item:not(:last-child) {
     margin-bottom: 32px;
   }
+  &__connection {
+    margin-bottom: 64px;
+  }
+  &__tel {
+    font-size: 34px;
+    color: $accent-color;
+    line-height: 1.18;
+  }
+  &__connection-item {
+    margin-bottom: 32px;
+  }
+  &__mail {
+    font-size: 24px;
+    line-height: 1.17;
+    color: $secondary-text-color;
+  }
   &__social {
     display: flex;
   }
