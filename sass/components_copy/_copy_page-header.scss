@@ -11,3 +11,46 @@
     align-items: center;
   }
 }
+
+dsfsd .page-header {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &__contaner {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  &__menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 15px 48px 40px;
+    @media screen and (min-width: $tablet-width) {
+      padding: 0;
+      position: static;
+      background-color: transparent;
+    }
+  }
+  &--portfolio {
+    border: 1px solid #ececec;
+  }
+  &__button {
+    background-color: $secondary-accent-color;
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+
+    align-items: center;
+    display: block;
+
+    @media screen and (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}

@@ -337,16 +337,26 @@ img {
   padding: 10px 15px 48px 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .page-header__menu {
+    padding: 0;
+    position: static;
+    background-color: transparent;
+  }
+}
+
 .page-header--portfolio {
   border: 1px solid #ececec;
 }
 
 .page-header__button {
-  background-color: #ffffff;
+  background-color: transparent;
   margin-left: auto;
   border: none;
   cursor: pointer;
-  padding: 8px 12px;
+  color: #212121;
+  width: 40px;
+  height: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -357,6 +367,10 @@ img {
   .page-header__button {
     display: none;
   }
+}
+
+.page-header__button-icon {
+  fill: currentColor;
 }
 
 .page-logo {

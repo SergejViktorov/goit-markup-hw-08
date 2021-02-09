@@ -16,16 +16,27 @@
     bottom: 0;
     left: 0;
     padding: 10px 15px 48px 40px;
+    @media screen and (min-width: $tablet-width) {
+      padding: 0;
+      position: static;
+      background-color: transparent;
+    }
   }
   &--portfolio {
     border: 1px solid #ececec;
   }
+  &__button-icon {
+  }
+
   &__button {
-    background-color: $secondary-accent-color;
+    background-color: transparent;
     margin-left: auto;
     border: none;
     cursor: pointer;
-    padding: 8px 12px;
+
+    color: $primery-text-color;
+    width: 40px;
+    height: 40px;
 
     align-items: center;
     display: block;
@@ -33,5 +44,8 @@
     @media screen and (min-width: $tablet-width) {
       display: none;
     }
+  }
+  &__button-icon {
+    fill: currentColor;
   }
 }
