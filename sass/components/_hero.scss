@@ -5,6 +5,7 @@
   font-weight: 400;
   background-color: $dark-background-color;
   padding: 0;
+  min-width: 480px;
 
   &__overlay {
     @media screen and (min-width: $desktop-width) {

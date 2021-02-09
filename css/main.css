@@ -316,6 +316,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   position: relative;
+  min-width: 480px;
 }
 
 .page-header__contaner {
@@ -646,6 +647,7 @@ img {
   font-weight: 400;
   background-color: #2f303a;
   padding: 0;
+  min-width: 480px;
 }
 
 .hero__overlay {
@@ -715,6 +717,7 @@ img {
 
 .advantages {
   padding: 60px 0px;
+  min-width: 480px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -915,6 +918,7 @@ img {
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
+  min-width: 480px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1233,6 +1237,7 @@ img {
   background-color: #2f303a;
   text-decoration: none;
   padding: 60px 0px;
+  min-width: 480px;
 }
 
 .footer__contaner {

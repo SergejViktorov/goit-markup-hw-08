@@ -3,6 +3,7 @@
   background-color: $dark-background-color;
   text-decoration: none;
   padding: 60px 0px;
+  min-width: 480px;
 
   &__contaner {
     @media screen and (min-width: $tablet-width) {
