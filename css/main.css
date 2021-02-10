@@ -1642,6 +1642,7 @@ img {
 
 .card-set__link {
   display: block;
+  height: 100%;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -1742,6 +1743,12 @@ img {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+
+@media screen and (min-width: 768px) {
+  .card-set__text-box {
+    padding: 49px 24px;
+  }
 }
 
 .card-set__title {

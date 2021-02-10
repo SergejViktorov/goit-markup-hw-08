@@ -52,7 +52,7 @@
     }
 
     display: block;
-
+    height: 100%;
     transition-property: box-shadow;
     transition-duration: $animation-duration;
     transition-timing-function: $animation-type;
@@ -115,6 +115,9 @@
     padding: 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
+    @media screen and (min-width: $tablet-width) {
+      padding: 49px 24px;
+    }
   }
 
   &__title {
