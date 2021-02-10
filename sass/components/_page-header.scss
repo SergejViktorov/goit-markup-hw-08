@@ -64,6 +64,14 @@
 .mobile-button.is-open .icon-menu {
   display: none;
 }
+.icon-cross:hover,
+.icon-cross:focus {
+  color: $accent-color;
+}
+.mobile-button:hover,
+.mobile-button:focus {
+  color: $accent-color;
+}
 
 .menu {
   position: absolute;
@@ -72,6 +80,10 @@
   &__button {
     margin-left: auto;
   }
+  &__button:hover,
+  &__button:focus {
+    color: $accent-color;
+  }
   &__nav {
     margin-bottom: 302px;
   }
@@ -79,6 +91,13 @@
     color: $primery-text-color;
     font-size: 40px;
     line-height: 1.18;
+  }
+  &__nav-link:hover,
+  &__nav-link:focus {
+    color: $accent-color;
+  }
+  &__nav-link--current {
+    color: $accent-color;
   }
   &__nav-item:not(:last-child) {
     margin-bottom: 32px;
@@ -102,10 +121,11 @@
   &__social {
     display: flex;
   }
-  &__social-item {
-  }
+
   &__social-item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
   }
   &__social-link {
     color: $accent-color;

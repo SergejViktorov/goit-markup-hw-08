@@ -16,12 +16,12 @@
 
 <body>
 
-    <header class="page-header page-header--portfolio">
+    <header class="page-header page-header--portfolio" >
         <div class="contaner page-header__contaner">
     
             <a class="page-logo" href="./index.html"><span class="page-logo--start">Web</span>Studio</a>
             <button class="mobile-button is-open" type="button" data-menu-button aria-controls="menu">
-                <svg width="40" height="40" aria-label="переключатель мобильного окна">
+                <svg class="img-menu" width="40" height="40" aria-label="переключатель мобильного окна">
                     <use class="icon-cross" href="./images/symbol-defs.svg#icon-menu_24px"></use>
                     <use class="icon-menu" href="./images/symbol-defs.svg#icon-close_24px">
                     </use>
@@ -34,15 +34,17 @@
     
     
                 <ul class="menu__nav">
-                    <li class="menu__nav-item"><a class=" menu__nav-link" href="./index.html">Студия</a>
+                    <li class="menu__nav-item"><a class=" menu__nav-link "
+                            href="./index.html">Студия</a>
                     </li>
-                    <li class="menu__nav-item"><a class="menu__nav-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="menu__nav-item"><a class="menu__nav-link menu__nav-link--current" href="./portfolio.html">Портфолио</a></li>
                     <li class="menu__nav-item"><a class="menu__nav-link" href="">Контакты</a></li>
                 </ul>
     
                 <ul class="menu__connection">
     
-                    <li class="menu__connection-item"><a class="menu__tel " href="tel:+380961111111"> +380961111111</a></li>
+                    <li class="menu__connection-item"><a class="menu__tel nav-links__link--current"
+                            href="tel:+380961111111"> +380961111111</a></li>
                     <li class=""> <a class="menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 </ul>
                 <ul class="menu__social">
@@ -56,7 +58,7 @@
                 <ul class="nav-links">
                     <li class="nav-links__item"><a class="nav-links__link "
                             href="./index.html">Студия</a></li>
-                    <li class="nav-links__item"><a class="nav-links__link nav-links__link--current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav-links__item"><a class="nav-links__link" nav-links__link--current href="./portfolio.html">Портфолио</a></li>
                     <li class="nav-links__item"><a class="nav-links__link" href="">Контакты</a></li>
                 </ul>
             </nav>
@@ -300,7 +302,7 @@
             </div>
         </div>
     </footer>
-<script src="./js/modal.js"></script>
+<script src="./js/mobil.js"></script>
 </body>
 
 </html>
