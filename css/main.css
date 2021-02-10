@@ -1587,6 +1587,7 @@ img {
 
 .card-set__item {
   display: block;
+  min-width: 480px;
 }
 
 .card-set__link {
@@ -2076,6 +2077,7 @@ img {
 }
 
 .portfolio {
+  min-width: 480px;
   padding-bottom: 60px;
   padding-top: 60px;
 }
