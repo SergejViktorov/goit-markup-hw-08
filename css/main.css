@@ -635,6 +635,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contakt-list__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
 .contakt-list__link {
   color: #757575;
   -webkit-box-align: center;
