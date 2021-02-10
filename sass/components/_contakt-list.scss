@@ -54,6 +54,7 @@
       font-size: 14px;
     }
   }
+
   &__icon {
     @media screen and (min-width: $tablet-width) {
       margin-right: 8px;
@@ -62,6 +63,26 @@
     @media screen and (min-width: $desktop-width) {
       margin-right: 10px;
       fill: currentColor;
+    }
+  }
+  &__icon--mail {
+    @media screen and (min-width: $tablet-width) {
+      width: 14px;
+      height: 10px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      width: 16px;
+      height: 12px;
+    }
+  }
+  &__icon--tel {
+    @media screen and (min-width: $tablet-width) {
+      width: 10px;
+      height: 14px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      width: 10px;
+      height: 16px;
     }
   }
 }

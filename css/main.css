@@ -712,6 +712,34 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contakt-list__icon--mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contakt-list__icon--mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contakt-list__icon--tel {
+    width: 10px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contakt-list__icon--tel {
+    width: 10px;
+    height: 16px;
+  }
+}
+
 .hero {
   display: block;
   color: #ffffff;
@@ -1657,25 +1685,30 @@ img {
 }
 
 .card-set__item {
+  height: 100%;
   display: block;
-  min-width: 450px;
+  width: 450px;
 }
 
 @media screen and (min-width: 768px) {
   .card-set__item {
-    min-width: 354px;
+    width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .card-set__item {
-    min-width: 370px;
+    width: 370px;
   }
 }
 
 .card-set__link {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   display: block;
   height: 100%;
+  text-decoration: none;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -1772,21 +1805,18 @@ img {
 }
 
 .card-set__text-box {
-  display: block;
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
   border-top: none;
+  width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .card-set__text-box {
-    padding: 49px 24px;
-  }
+.card-set__text-box:first-child {
+  height: 146px;
+  margin-bottom: 49px;
 }
 
 .card-set__title {
   margin-bottom: 4px;
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -2165,7 +2195,7 @@ img {
 }
 
 .portfolio {
-  min-width: 450px;
+  width: 100%;
   padding-bottom: 60px;
   padding-top: 60px;
 }

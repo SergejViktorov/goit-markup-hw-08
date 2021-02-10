@@ -34,29 +34,35 @@
     transform: translateY(0);
   }
   &__item {
+    height: 100%;
     display: block;
-    min-width: 450px;
-    @media screen and (min-width: $tablet-width) {
-      min-width: 354px;
-    }
-    @media screen and (min-width: $desktop-width) {
-      min-width: 370px;
-    }
-  }
-  &__link {
+    width: 450px;
+
     @media screen and (min-width: $tablet-width) {
       width: 354px;
     }
     @media screen and (min-width: $desktop-width) {
       width: 370px;
     }
-
+  }
+  &__link {
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
     display: block;
     height: 100%;
+    text-decoration: none;
     transition-property: box-shadow;
     transition-duration: $animation-duration;
     transition-timing-function: $animation-type;
+    @media screen and (min-width: $tablet-width) {
+      width: 354px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      width: 370px;
+    }
   }
+
   &__link:focus,
   &__link:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -111,18 +117,18 @@
     }
   }
   &__text-box {
-    display: block;
     padding: 20px 24px;
-    border: 1px solid #eeeeee;
-    border-top: none;
-    @media screen and (min-width: $tablet-width) {
-      padding: 49px 24px;
-    }
-  }
 
+    border-top: none;
+    width: 100%;
+  }
+  &__text-box:first-child {
+    height: 146px;
+    margin-bottom: 49px;
+  }
   &__title {
     margin-bottom: 4px;
-    font-weight: 700;
+
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
