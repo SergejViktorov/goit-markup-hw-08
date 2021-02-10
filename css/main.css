@@ -622,16 +622,16 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .contakt-list__item {
-    margin-bottom: 10px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .contakt-list__item {
     padding: 32px 0px;
     margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contakt-list__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -649,6 +649,20 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 768px) {
+  .contakt-list__link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contakt-list__link {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 768px) {
