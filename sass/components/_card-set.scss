@@ -33,6 +33,9 @@
   &__item:hover {
     transform: translateY(0);
   }
+  &__item {
+    display: block;
+  }
   &__link {
     @media screen and (min-width: $tablet-width) {
       width: 354px;
@@ -41,8 +44,9 @@
       width: 370px;
     }
     width: 100%;
+    height: 100%;
     display: block;
-    height: 404px;
+
     transition-property: box-shadow;
     transition-duration: $animation-duration;
     transition-timing-function: $animation-type;
@@ -62,7 +66,15 @@
     position: relative;
     overflow: hidden;
   }
-
+  &__img {
+    width: 450px;
+    @media screen and (min-width: $tablet-width) {
+      width: 354px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      width: 370px;
+    }
+  }
   &__overlay {
     left: 0;
     top: 0;

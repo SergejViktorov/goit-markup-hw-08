@@ -742,9 +742,9 @@ img {
   min-width: 145px;
   outline: none;
   border: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantages {
@@ -1585,10 +1585,14 @@ img {
           transform: translateY(0);
 }
 
+.card-set__item {
+  display: block;
+}
+
 .card-set__link {
   width: 100%;
+  height: 100%;
   display: block;
-  height: 404px;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -1627,6 +1631,22 @@ img {
 .card-set__image {
   position: relative;
   overflow: hidden;
+}
+
+.card-set__img {
+  width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-set__img {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set__img {
+    width: 370px;
+  }
 }
 
 .card-set__overlay {
