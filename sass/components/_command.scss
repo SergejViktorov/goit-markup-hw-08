@@ -71,4 +71,13 @@
   &__position {
     color: $secondary-text-color;
   }
+  &__img {
+    width: 450px;
+    @media screen and (min-width: $tablet-width) {
+      width: 354px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      width: 270px;
+    }
+  }
 }

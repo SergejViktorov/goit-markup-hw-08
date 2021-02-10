@@ -19,10 +19,25 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero.jpg);
+      url(../images/background/mobile.jpg);
     padding-top: 118px;
     background-position: center;
     padding-bottom: 118px;
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url("../images/background/mobile@2x.jpg");
+    }
+    @media screen and (min-width: $tablet-width) {
+      background-image: url(../images/background/tablet.jpg);
+      @media screen and (min-resolution: 2dppx) {
+        background-image: url("../images/background/tablet@2x.jpg");
+      }
+    }
+    @media screen and (min-width: $desktop-width) {
+      background-image: url(../images/background/desktop.jpg);
+      @media screen and (min-resolution: 2dppx) {
+        background-image: url("../images/background/desktop@2x.jpg");
+      }
+    }
   }
   &__title {
     @media screen and (min-width: $desktop-width) {
