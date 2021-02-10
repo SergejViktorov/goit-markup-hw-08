@@ -36,6 +36,12 @@
   &__item {
     display: block;
     min-width: 450px;
+    @media screen and (min-width: $tablet-width) {
+      min-width: 354px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      min-width: 370px;
+    }
   }
   &__link {
     @media screen and (min-width: $tablet-width) {

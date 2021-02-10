@@ -1614,6 +1614,18 @@ img {
   min-width: 450px;
 }
 
+@media screen and (min-width: 768px) {
+  .card-set__item {
+    min-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set__item {
+    min-width: 370px;
+  }
+}
+
 .card-set__link {
   display: block;
   -webkit-transition-property: -webkit-box-shadow;
