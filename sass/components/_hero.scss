@@ -8,15 +8,15 @@
   min-width: 480px;
 
   &__overlay {
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
     @media screen and (min-width: $desktop-width) {
       height: 600px;
       padding-top: 200px;
       min-width: 480px;
       max-width: 1600px;
-      background-repeat: no-repeat;
-      background-position: center;
-      margin-right: auto;
-      margin-left: auto;
     }
 
     background-image: linear-gradient(
