@@ -8,16 +8,12 @@
   min-width: 480px;
 
   &__overlay {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-repeat: no-repeat;
+    max-width: 1600px;
+    height: 400px;
     background-position: center;
-    margin-right: auto;
-    margin-left: auto;
-    @media screen and (min-width: $desktop-width) {
-      height: 600px;
-      padding-top: 200px;
-      min-width: 480px;
-      max-width: 1600px;
-    }
 
     background-image: linear-gradient(
         to right,
@@ -25,23 +21,54 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/background/mobile.jpg);
-    padding-top: 118px;
-    background-position: center;
 
-    padding-bottom: 118px;
     @media screen and (min-resolution: 2dppx) {
-      background-image: url("../images/background/mobile@2x.jpg");
+      height: 400px;
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background/mobile@2x.jpg);
     }
     @media screen and (min-width: $tablet-width) {
-      background-image: url(../images/background/tablet.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background/tablet.jpg);
+
       @media screen and (min-resolution: 2dppx) {
-        background-image: url("../images/background/tablet@2x.jpg");
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/background/tablet@2x.jpg);
       }
     }
     @media screen and (min-width: $desktop-width) {
-      background-image: url(../images/background/desktop.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background/desktop.jpg);
+      max-width: 1600px;
+      padding-top: 200px;
+      width: 100%;
+      height: 600px;
+      background-size: cover;
+      background-position: center;
+
       @media screen and (min-resolution: 2dppx) {
-        background-image: url("../images/background/desktop@2x.jpg");
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/background/desktop@2x.jpg);
       }
     }
   }
