@@ -49,6 +49,7 @@
     transition-timing-function: $animation-type;
     @media screen and (min-width: $tablet-width) {
       width: 354px;
+      height: 100%;
     }
     @media screen and (min-width: $desktop-width) {
       width: 370px;
