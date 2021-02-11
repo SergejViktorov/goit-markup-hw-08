@@ -751,6 +751,7 @@ img {
 }
 
 .hero__overlay {
+  display: block;
   padding-top: 118px;
   padding-bottom: 118px;
   background-repeat: no-repeat;
@@ -793,6 +794,7 @@ img {
     height: 600px;
     background-size: cover;
     background-position: center;
+    display: inline-block;
   }
 }
 

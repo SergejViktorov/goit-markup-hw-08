@@ -8,6 +8,7 @@
   min-width: 480px;
 
   &__overlay {
+    display: block;
     padding-top: 118px;
     padding-bottom: 118px;
     background-repeat: no-repeat;
@@ -60,7 +61,7 @@
       height: 600px;
       background-size: cover;
       background-position: center;
-
+      display: inline-block;
       @media screen and (min-resolution: 2dppx) {
         background-image: linear-gradient(
             to right,
