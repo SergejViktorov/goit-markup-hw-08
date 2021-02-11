@@ -34,23 +34,15 @@
     transform: translateY(0);
   }
   &__item {
-    height: 100%;
     display: block;
-    width: 450px;
-
-    @media screen and (min-width: $tablet-width) {
-      width: 354px;
-    }
-    @media screen and (min-width: $desktop-width) {
-      width: 370px;
-    }
   }
+
   &__link {
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     display: block;
-    height: 100%;
+
     text-decoration: none;
     transition-property: box-shadow;
     transition-duration: $animation-duration;
@@ -79,13 +71,7 @@
     overflow: hidden;
   }
   &__img {
-    width: 450px;
-    @media screen and (min-width: $tablet-width) {
-      width: 354px;
-    }
-    @media screen and (min-width: $desktop-width) {
-      width: 370px;
-    }
+    width: 100%;
   }
   &__overlay {
     left: 0;
@@ -103,9 +89,9 @@
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 1.55;
+    line-height: 1.56;
     color: $secondary-accent-color;
-    padding: 63px 24px;
+    padding: 77px 24px;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -113,19 +99,13 @@
       padding: 49px 24px;
     }
     @media screen and (min-width: $desktop-width) {
-      padding: 77px 24px;
+      padding: 63px 24px;
     }
   }
   &__text-box {
     padding: 20px 24px;
+  }
 
-    border-top: none;
-    width: 100%;
-  }
-  &__text-box:first-child {
-    height: 146px;
-    margin-bottom: 49px;
-  }
   &__title {
     margin-bottom: 4px;
 
