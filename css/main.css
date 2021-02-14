@@ -337,6 +337,8 @@ img {
   background-color: #ffffff;
   top: 0;
   left: 0;
+  height: 100%;
+  min-height: 100vh;
   width: 100%;
   padding: 48px 0px 48px 40px;
 }
@@ -382,8 +384,11 @@ img {
   background-color: transparent;
   margin-left: auto;
   border: none;
+  min-height: 100vh;
+  min-height: 100%;
   cursor: pointer;
   outline: none;
+  padding: 48px 83px 47px 70px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -437,10 +442,6 @@ img {
 
 .menu__button:hover, .menu__button:focus {
   color: #2196f3;
-}
-
-.menu__nav {
-  margin-bottom: 302px;
 }
 
 .menu__nav-link {
@@ -501,7 +502,16 @@ img {
 }
 
 .menu.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .page-logo {
