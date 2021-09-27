@@ -1,14 +1,16 @@
 .contaner {
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0px 15px;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: $tablet-width) {
-    width: 768px;
-  }
-  @media screen and (min-width: $desktop-width) {
-    width: 1200px;
-  }
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0px 15px;
+	min-width: 320px;
+	max-width: 1200px;
+	@media screen and (min-width: 480px) {
+		width: 480px;
+	}
+	@media screen and (min-width: $tablet-width) {
+		width: 768px;
+	}
+	@media screen and (min-width: $desktop-width) {
+		width: 1200px;
+	}
 }

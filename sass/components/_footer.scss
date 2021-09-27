@@ -1,45 +1,44 @@
 .footer {
-  display: block;
-  background-color: $dark-background-color;
-  text-decoration: none;
-  padding: 60px 0px;
-  min-width: 480px;
+	display: block;
+	background-color: $dark-background-color;
+	text-decoration: none;
+	padding: 60px 0px;
 
-  &__contaner {
-    @media screen and (min-width: $tablet-width) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    @media screen and (min-width: $desktop-width) {
-      display: flex;
-    }
+	&__contaner {
+		@media screen and (min-width: $tablet-width) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		@media screen and (min-width: $desktop-width) {
+			display: flex;
+		}
 
-    align-items: baseline;
-  }
-  &__address {
-    text-align: center;
-    @media screen and (min-width: $desktop-width) {
-      text-align: left;
-    }
-  }
-  &__title {
-    font-family: $main-font-family;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $secondary-accent-color;
-    margin-bottom: 20px;
-    margin-top: 0;
-    display: block;
-    text-align: center;
-    @media screen and (min-width: $desktop-width) {
-      text-align: left;
-    }
-  }
-  &__social {
-    fill: $secondary-accent-color;
-  }
+		align-items: baseline;
+	}
+	&__address {
+		text-align: center;
+		@media screen and (min-width: $desktop-width) {
+			text-align: left;
+		}
+	}
+	&__title {
+		font-family: $main-font-family;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.14;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: $secondary-accent-color;
+		margin-bottom: 20px;
+		margin-top: 0;
+		display: block;
+		text-align: center;
+		@media screen and (min-width: $desktop-width) {
+			text-align: left;
+		}
+	}
+	&__social {
+		fill: $secondary-accent-color;
+	}
 }

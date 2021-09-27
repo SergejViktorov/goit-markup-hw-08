@@ -1,164 +1,162 @@
 .page-header {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  position: relative;
-  min-width: 480px;
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	position: relative;
 
-  &__contaner {
-    display: flex;
-    align-items: center;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  &__menu {
-    display: none;
-    position: absolute;
-    z-index: 3;
-
-    background-color: $secondary-accent-color;
-    top: 0;
-    left: 0;
-    height: 100%;
-    min-height: 100vh;
-    width: 100%;
-    padding: 48px 0px 48px 40px;
-    @media screen and (min-width: $tablet-width) {
-      padding: 0;
-      position: static;
-      background-color: transparent;
-    }
-    &__menu.is-open {
-      display: block;
-    }
-  }
-  &--portfolio {
-    border: 1px solid #ececec;
-  }
+	&__contaner {
+		display: flex;
+		align-items: center;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	&__menu {
+		display: none;
+		position: absolute;
+		z-index: 3;
+		background-color: $secondary-accent-color;
+		top: 0;
+		left: 0;
+		min-height: 100vh;
+		width: 100%;
+		padding: 48px 0px 48px 40px;
+		@media screen and (min-width: $tablet-width) {
+			padding: 0;
+			position: static;
+			background-color: transparent;
+		}
+		&__menu.is-open {
+			display: block;
+		}
+	}
+	&--portfolio {
+		border: 1px solid #ececec;
+	}
 }
 .icon-cross:hover,
 .icon-cross:focus {
-  color: $accent-color;
+	color: $accent-color;
 }
 .icon-menu:hover,
 .icon-menu:focus {
-  color: $accent-color;
+	color: $accent-color;
 }
 .img-menu:hover,
 .img-menu:focus {
-  color: $accent-color;
+	color: $accent-color;
 }
 
 .mobile-button:hover,
 .mobile-button:focus {
-  color: $accent-color;
+	color: $accent-color;
 }
 
 .mobile-button {
-  z-index: 5;
-  background-color: transparent;
-  margin-left: auto;
-  border: none;
-  min-height: 100vh;
-  min-height: 100%;
-  cursor: pointer;
-  outline: none;
-  padding: 48px 83px 47px 70px;
-  display: inline-flex;
-  padding: 0;
+	z-index: 5;
+	background-color: transparent;
+	margin-left: auto;
+	border: none;
+	min-height: 100vh;
+	min-height: 100%;
+	cursor: pointer;
+	outline: none;
+	padding: 48px 83px 47px 70px;
+	display: inline-flex;
+	padding: 0;
 
-  @media screen and (min-width: $tablet-width) {
-    display: none;
-  }
+	@media screen and (min-width: $tablet-width) {
+		display: none;
+	}
 }
 
 .mobile-button .icon-cross {
-  display: none;
+	display: none;
 }
 .icon-cross {
-  fill: currentColor;
+	fill: currentColor;
 }
 .icon-menu {
-  fill: currentColor;
+	fill: currentColor;
 }
 .mobile-button.is-open .icon-cross {
-  display: block;
+	display: block;
 }
 .mobile-button.is-open .icon-menu {
-  display: none;
+	display: none;
 }
 .icon-cross:hover,
 .icon-cross:focus {
-  color: $accent-color;
+	color: $accent-color;
 }
 .icon-menu:hover,
 .icon-menu:focus {
-  color: $accent-color;
+	color: $accent-color;
 }
 
 .menu {
-  position: absolute;
-  background-attachment: $secondary-accent-color;
+	position: absolute;
+	background-attachment: $secondary-accent-color;
 
-  &__button {
-    margin-left: auto;
-  }
-  &__button:hover,
-  &__button:focus {
-    color: $accent-color;
-  }
-  &__container {
-  }
+	&__button {
+		margin-left: auto;
+	}
+	&__button:hover,
+	&__button:focus {
+		color: $accent-color;
+	}
+	&__container {
+	}
 
-  &__nav-link {
-    color: $primery-text-color;
-    font-size: 40px;
-    line-height: 1.18;
-  }
-  &__nav-link:hover,
-  &__nav-link:focus {
-    color: $accent-color;
-  }
-  &__nav-link--current {
-    color: $accent-color;
-  }
-  &__nav-item:not(:last-child) {
-    margin-bottom: 32px;
-  }
-  &__connection {
-    margin-bottom: 64px;
-  }
-  &__tel {
-    font-size: 34px;
-    color: $accent-color;
-    line-height: 1.18;
-  }
-  &__connection-item {
-    margin-bottom: 32px;
-  }
-  &__mail {
-    font-size: 24px;
-    line-height: 1.17;
-    color: $secondary-text-color;
-  }
-  &__social {
-    display: flex;
-  }
+	&__nav-link {
+		color: $primery-text-color;
+		font-size: 40px;
+		line-height: 1.18;
+	}
+	&__nav-link:hover,
+	&__nav-link:focus {
+		color: $accent-color;
+	}
+	&__nav-link--current {
+		color: $accent-color;
+	}
+	&__nav-item:not(:last-child) {
+		margin-bottom: 32px;
+	}
+	&__connection {
+		margin-bottom: 64px;
+	}
+	&__tel {
+		font-size: 34px;
+		color: $accent-color;
+		line-height: 1.18;
+	}
+	&__connection-item {
+		margin-bottom: 32px;
+	}
+	&__mail {
+		font-size: 24px;
+		line-height: 1.17;
+		color: $secondary-text-color;
+	}
+	&__social {
+		display: flex;
+		flex-wrap: wrap;
+	}
 
-  &__social-item:not(:last-child) {
-    margin-right: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-    padding-right: 10px;
-  }
-  &__social-link {
-    color: $accent-color;
-    letter-spacing: 0.02em;
-    font-size: 18px;
-    line-height: 1.22;
-  }
+	&__social-item:not(:last-child) {
+		margin-right: 10px;
+		border-right: 1px solid rgba(33, 33, 33, 0.2);
+		padding-right: 10px;
+	}
+	&__social-link {
+		color: $accent-color;
+		letter-spacing: 0.02em;
+		font-size: 18px;
+		line-height: 1.22;
+	}
 }
 .menu.is-open {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }

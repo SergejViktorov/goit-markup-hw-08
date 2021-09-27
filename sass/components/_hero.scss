@@ -1,117 +1,117 @@
 .hero {
-  display: block;
-  color: $secondary-accent-color;
-  text-align: center;
-  font-weight: 400;
-  background-color: $dark-background-color;
-  padding: 0;
-  min-width: 480px;
+	display: block;
+	color: $secondary-accent-color;
+	text-align: center;
+	font-weight: 400;
+	background-color: $dark-background-color;
+	padding: 0;
 
-  &__overlay {
-    display: block;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    background-repeat: no-repeat;
-    max-width: 1600px;
-    height: 400px;
-    background-position: center;
-    background-size: cover;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/background/mobile.jpg);
+	&__overlay {
+		display: block;
+		padding-top: 118px;
+		padding-bottom: 118px;
+		background-repeat: no-repeat;
+		max-width: 1600px;
+		height: 400px;
+		background-position: center;
+		background-size: cover;
+		background-image: linear-gradient(
+				to right,
+				rgba(47, 48, 58, 0.4),
+				rgba(47, 48, 58, 0.4)
+			),
+			url(../images/background/mobile.jpg);
 
-    @media screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/background/mobile@2x.jpg);
-    }
-    @media screen and (min-width: $tablet-width) {
-      background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/background/tablet.jpg);
+		@media screen and (min-resolution: 2dppx) {
+			background-image: linear-gradient(
+					to right,
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url(../images/background/mobile@2x.jpg);
+		}
+		@media screen and (min-width: $tablet-width) {
+			background-image: linear-gradient(
+					to right,
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url(../images/background/tablet.jpg);
 
-      @media screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url(../images/background/tablet@2x.jpg);
-      }
-    }
-    @media screen and (min-width: $desktop-width) {
-      background-image: linear-gradient(
-          to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/background/desktop.jpg);
-      max-width: 1600px;
-      padding-top: 200px;
-      width: 100%;
-      height: 600px;
-      background-size: cover;
-      background-position: center;
-      display: inline-block;
-      @media screen and (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-          ),
-          url(../images/background/desktop@2x.jpg);
-      }
-    }
-  }
-  &__title {
-    @media screen and (min-width: $desktop-width) {
-      width: 696px;
-      font-size: 44px;
-      line-height: 1.36;
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-    }
-    @media screen and (min-width: $tablet-width) {
-      display: block;
-      text-align: center;
-      margin-right: auto;
-      margin-left: auto;
-    }
-    margin-bottom: 30px;
-    width: 360px;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
-    display: inline-block;
-  }
-  &__button {
-    padding: 10px 32px;
-    border-radius: 4px;
-    background-color: $accent-color;
-    color: $secondary-accent-color;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    min-width: 145px;
-    outline: none;
-    border: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+			@media screen and (min-resolution: 2dppx) {
+				background-image: linear-gradient(
+						to right,
+						rgba(47, 48, 58, 0.4),
+						rgba(47, 48, 58, 0.4)
+					),
+					url(../images/background/tablet@2x.jpg);
+			}
+		}
+		@media screen and (min-width: $desktop-width) {
+			background-image: linear-gradient(
+					to right,
+					rgba(47, 48, 58, 0.4),
+					rgba(47, 48, 58, 0.4)
+				),
+				url(../images/background/desktop.jpg);
+			max-width: 1600px;
+			padding-top: 200px;
+			width: 100%;
+			height: 600px;
+			background-size: cover;
+			background-position: center;
+			display: inline-block;
+			@media screen and (min-resolution: 2dppx) {
+				background-image: linear-gradient(
+						to right,
+						rgba(47, 48, 58, 0.4),
+						rgba(47, 48, 58, 0.4)
+					),
+					url(../images/background/desktop@2x.jpg);
+			}
+		}
+	}
+	&__title {
+		margin-bottom: 30px;
+		font-weight: 900;
+		font-size: 26px;
+		line-height: 1.62;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+
+		@media screen and (min-width: $tablet-width) {
+			display: block;
+			text-align: center;
+			margin-right: auto;
+			margin-left: auto;
+			width: 360px;
+		}
+		@media screen and (min-width: $desktop-width) {
+			width: 696px;
+			font-size: 44px;
+			line-height: 1.36;
+			margin-right: auto;
+			margin-left: auto;
+			display: block;
+		}
+	}
+	&__button {
+		padding: 10px 32px;
+		border-radius: 4px;
+		background-color: $accent-color;
+		color: $secondary-accent-color;
+		cursor: pointer;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.88;
+		letter-spacing: 0.06em;
+		min-width: 145px;
+		outline: none;
+		border: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
