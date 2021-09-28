@@ -1947,7 +1947,7 @@ img {
   padding: 40px;
   width: 95%;
   position: absolute;
-  top: 83%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1960,7 +1960,7 @@ img {
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
